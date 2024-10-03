@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "EvilBad",
+  "version": "1.1",
+
+  "description": "Automatically logs in to canvas",
+  "permissions": ["storage", "https://*.instructure.com/login/session_token", "https://*/login/session_token"],
+
+  "icons": {
+    "512": "icons/icon-512.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/icon-512.png",
+    "default_title": "EvilBad",
+    "default_popup": "popup/index.html"
+  },
+
+  "options_ui": {
+    "page": "options/index.html"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{b12b7371-4b46-4703-898e-fc06ab1b49bd}"
+    }
+  }
+}
